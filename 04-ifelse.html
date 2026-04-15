@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+ <link rel="stylesheet" href="./main.css">
+ <script>
+ var title="If and Else Statements";
+ </script>
+ 
+ <script> document.write("<title>+title+</title>");</script>
+ 
+
+ <script src="./script.js"></script>
+</head>
+<body>
+<script>document.write(menu);</script>
+ <h1 style="text-align:center;"> <script>document.write(title);</script> Page </h1>
+ 
+ <h3 style="text-align:center;"> Check Stock Level</h3>
+ 
+ <button onclick="StockLevel()">Click Me</button>
+ <p id="stockStatus"></p>
+
+ <!-- Start of your Script code -->
+ <script>
+
+function StockLevel()
+{
+ var stock=1000;
+ var reorder=10;
+ 
+ if (stock<reorder) {
+	Alert="Low";
+}
+else if (stock < 100)
+{
+ Alert="Good";
+}
+else
+{
+ Alert="High";
+}
+document.getElementById("stockStatus").innerHTML=Alert;
+}
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
