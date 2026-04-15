@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+ <script>
+ var title="Javascript with HTML Forms";
+ 
+ function showData() {
+	oPopWin=window.open(",'Window1','toolbar=no,status=no,width=300,height=100'")
+	message = "<ul><li><b>Name:</b>" + document.contactform.name.value + "</li>; 
+	message += "<li><b>E-mail:</b>" + document.contactform.email.value + "</li>";
+	message += "<li><b>Cell No.:</b>" + document.contactform.mobile.value + "</ul>;
+	oPopWin.document.write(message);
+}
+
+</script>
+
+<script> document.write("<title>"+title+"</title>");<script>
+
+ <script src="./script.js"></script>
+</head>
+<body>
+ <h1 style="text-align:center;"> <script>document.write(title);</script> Page </h1>
+
+<form name="contactform">
+<fieldset>
+<legend>Contact Information</legend>
+<label>Name:<br>
+<input type="text" name="name"></label><br>
+<label>Email:<br>
+<input type="text" name="email"></label><br>
+<label>Cell No.:<br><input type="text" name="mobile"></label><br>
+</fieldset>
+<p><input type="BUTTON" value="Show Data" onClick="showData();"></p>
+</form>
+
+
+ <!-- Start of your Script code -->
+ <script>
+
+
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
