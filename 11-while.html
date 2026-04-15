@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+ <link rel="stylesheet" href="./main.css">
+ <script>
+ var title="While Loop";
+ </script>
+ 
+ <script> document.write("<title>"+title+"</title>");</script>
+
+ <script src="./script.js"></script>
+</head>
+<body>
+<script> document.write(menu);</script>
+ <h1 style="text-align:center;"> <script> document.write(title);</script> page </h1>
+ 
+ <button onclick="wLoop()">Click Me</button>
+ 
+ <p id="p1"></p>
+
+ <!-- Start of your Script code -->
+ <script>
+
+function wLoop()
+{
+var a="",i=1,c=true;
+while (c==true)
+{
+a=a + "This is loop number " + i + "<br>";
+i++;
+if (i==10)
+{
+c=false;
+}
+}
+document.getElementById("p1").innerHTML=a;
+}
+
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
