@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+ <link rel="stylesheet" href="./main.css">
+ <script>
+	var title="Prompt Window";
+	</script>
+	
+	<script> document.write("<title>"+title+"</title>");</script>
+
+ <script src="./script.js"></script>
+</head>
+<body>
+<script> document.write(menu);</script>
+ <h1 style="text-align:center;"> <script>document.write(title);</script> Page </h1>
+ 
+ <button onclick="pBox()">Click me to bring it the Prompt Box</button>
+ <p id="p1"></p>
+
+ <!-- Start of your Script code -->
+ <script>
+
+function pBox()
+{
+var msg;
+var name=prompt("What is your name?","Enter your name!");
+if (name!=null)
+{
+msg="Hello " + name + "! Welcome to the world of JS!";
+document.getElementById("p1").innerHTML=msg;
+}
+}
+
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
