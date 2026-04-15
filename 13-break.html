@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+ <link rel="stylesheet" href="./main.css">
+ <script>
+ var title="break";
+ </script>
+ 
+ <script> document.write("<title>"+title+</title>");</script>
+
+ <script src="./script.js"></script>
+</head>
+<body>
+<script> document.write(menu);</script>
+ <h1 style="text-align:center;"> <script>document.write(title);</script> Page </h1>
+ 
+ <button onclick="BreakContinue()">Click Me!</button>
+ <p id="p1"></p>
+
+ <!-- Start of your Script code -->
+ <script>
+
+function BreakContinue()
+{
+var a="",i=0;
+for (i=1;i<10;i++)
+{
+if (i==5)
+{
+continue;
+}
+if (i==8)
+{
+break;
+}
+a=a + "This is loop Number " + i + "<br>";
+}
+document.getElementById("p1").innerHTML=a;
+}
+
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
