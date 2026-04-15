@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+ <link rel="stylesheet" href="./main.css">
+ <script>
+  var title="Case Switch";
+ </script>
+
+	<script> document.write("<title>"+title+"</title>");</script>
+
+
+ <script src="./script.js"></script>
+</head>
+<body>
+<script>document.write(menu);</script>
+ <h1 style="text-align:center;"> <script>document.write(title);</script> Page </h1>
+
+</h3> Price Checker </h3>
+<button onclick="checkPrice()">Click Me</button>
+<p id="price"></p>
+
+ <!-- Start of your Script code -->
+ <script>
+
+function checkPrice(){
+ var sjacketColor = "Hello World";
+ var result;
+ switch(sjacketColor) {
+  case "Black":
+  result = "Price $300";
+  break;
+  case "Brown":
+  result = "Price 200$";
+  break;
+  case "Green";
+  result = "Price 100$";
+  break;
+  default:
+  result = " - No Color selected";
+}
+document.getElementById("price").innerHTML=sjacketColor+"Jacket: "+result;
+}  
+
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
