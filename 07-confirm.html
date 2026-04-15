@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+ <link rel="stylesheet" href="./main.css">
+ <script>
+ var title="Confirm Box";
+ </script>
+ 
+ <script> document.write("<title>"+title+"</title>");</script>
+
+ <script src="./script.js"></script>
+</head>
+<body>
+<script>document.write(menu)</script>
+ <h1 style="text-align:center;"> <script>document.write(title);</script> Page </h1>
+ 
+ <button onclick="cbox()">Click me to display a confirm box</button>
+ <p id="p1"></p>
+
+ <!-- Start of your Script code -->
+ <script>
+
+function cbox()
+{
+var x;
+var r=confirm("CLick on a button!");
+if (r==true)
+{
+ x="You clicked OK!";
+ }
+ else
+ {
+  x="You clicked Cancel!";
+  }
+  document.getElementById("p1").innerHTML=x;
+  }
+
+
+ </script>
+ <!-- End of your Script code -->
+</body>
+</html>
